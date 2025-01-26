@@ -10,9 +10,9 @@ import (
 func TestGoogleSearchScan(t *testing.T) {
 	assert := assertTest.New(t)
 
-	number, _ := LocalScan("+33 673421322")
+	number, _ := LocalScan("+15209010197")
 
-	scan := googlesearchScanCLI(utils.LoggerService, number)
+	scan := googlesearchScanCLI(utils.LoggerService, 15209010197)
 	scanWithFormat := googlesearchScanCLI(utils.LoggerService, number, "06.73.42.13.22")
 
 	t.Run("getDisposableProvidersDorks", func(t *testing.T) {
